@@ -1,0 +1,22 @@
+usage: ./build-metal-lab/bin/ggml-metal-tuning <tuner> [options]
+
+  offline kernel tuner for the Metal backend: sweeps a kernel's config grid and
+  prints pasteable table rows for the machine it runs on. never a pass/fail test.
+
+  tuners:
+    fa-vec            flash-attn vec (Q,NE) for ggml-metal-tuning.cpp
+
+  options:
+    -b <name>         backend device (default: first Metal device)
+    --dtype <list>    restrict KV dtypes, e.g. f16,q4_0 (default: all)
+    --dk <list>       restrict head sizes, e.g. 128,192 (default: all)
+    --reps <n>        timed reps per candidate, odd for an exact median (default: 7)
+    --seed <n>        RNG seed; per-cell seeds mix it with the shape (default: 1234)
+    --no-cooldown     do not pause/re-measure on thermal drift, only warn
+    --cool-drift <f>  anchor drift that triggers a cooldown (default: 0.10)
+    --cool-eps <f>    anchor tolerance to consider the GPU cool again (default: 0.03)
+    --cool-max-wait <s> give up cooling a cell after this many seconds (default: 120)
+    --cool-max-retry <n> re-measure rounds per cell before giving up (default: 2)
+
+  the table goes to stdout, all diagnostics to stderr:
+    ./build-metal-lab/bin/ggml-metal-tuning fa-vec > rows.txt 2> sweep.log

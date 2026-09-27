@@ -1,0 +1,45 @@
+Wed Sep 16 08:11:40 CST 2026
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
+2026-09-16 08:11:40.939 system_profiler[24015:6722375] hw.cpufamily: 0x1d5a87e8
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac17,4
+      Chip: Apple M5
+      Total Number of Cores: 10 (4 Super and 6 Efficiency)
+      Memory: 24 GB
+/Library/Developer/CommandLineTools
+Apple clang version 21.0.0 (clang-2100.3.34.2)
+Target: arm64-apple-darwin25.6.0
+cmake version 4.4.3
+?? codex_lab_local_snapshot/
+?? project_tree.txt
+?? tests/.DS_Store
+c8e03ce8122b7af76f836d53efde6df1ce5ec437
+origin	https://github.com/ggml-org/llama.cpp.git (fetch)
+origin	https://github.com/ggml-org/llama.cpp.git (push)
+930e2fa5995789efbf249a8bf61325bb626e417b
+?? codex_lab/
+Graphics/Displays:
+
+    Apple M5:
+
+      Chipset Model: Apple M5
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 10
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+      Displays:
+        Color LCD:
+          Display Type: Built-in Liquid Retina Display
+          Resolution: 2880 x 1864 Retina
+          Main Display: Yes
+          Mirror: Off
+          Online: Yes
+          Automatically Adjust Brightness: No
+          Connection Type: Internal

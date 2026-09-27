@@ -1,0 +1,51 @@
+ggml/src/ggml-metal
+├── CMakeLists.txt
+├── ggml-metal-common.cpp
+├── ggml-metal-common.h
+├── ggml-metal-context.h
+├── ggml-metal-context.m
+├── ggml-metal-device.cpp
+├── ggml-metal-device.h
+├── ggml-metal-device.m
+├── ggml-metal-fusion.cpp
+├── ggml-metal-fusion.h
+├── ggml-metal-impl.h
+├── ggml-metal-ops.cpp
+├── ggml-metal-ops.h
+├── ggml-metal-tuning.cpp
+├── ggml-metal-tuning.h
+├── ggml-metal.cpp
+└── kernels
+    ├── argsort.metal
+    ├── binbcast.metal
+    ├── common.h
+    ├── conv.metal
+    ├── dequantize.h
+    ├── fa.metal
+    ├── gated_delta_net.metal
+    ├── misc.metal
+    ├── mul_mm.metal
+    ├── mul_mv.metal
+    ├── norm.metal
+    ├── pool.metal
+    ├── quantize.h
+    ├── quantize.metal
+    ├── reduce.metal
+    ├── rope.metal
+    ├── softmax.metal
+    ├── solve_tri.metal
+    ├── ssm.metal
+    ├── tri.metal
+    ├── unary.metal
+    ├── upscale.metal
+    └── wkv.metal
+tools/tuning
+├── CMakeLists.txt
+├── README.md
+├── bench.cpp
+├── bench.h
+├── fa-vec.cpp
+├── fa-vec.h
+└── main.cpp
+
+3 directories, 46 files
